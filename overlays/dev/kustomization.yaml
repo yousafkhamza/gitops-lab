@@ -5,4 +5,7 @@ namePrefix: dev-
 
 replicas:
   - name: nginx
-    count: 1
+    count: 3
+
+commonLabels:
+  env: dev
