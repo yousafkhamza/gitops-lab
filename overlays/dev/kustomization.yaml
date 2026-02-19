@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+
+namePrefix: dev-
+
+replicas:
+  - name: nginx
+    count: 2
+
