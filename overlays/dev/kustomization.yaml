@@ -1,11 +1,13 @@
 resources:
-  - ../../base
+- ../../base
 
 namePrefix: dev-
 
 replicas:
-  - name: nginx
-    count: 3
+- count: 3
+  name: nginx
 
-commonLabels:
-  env: dev
+labels:
+- includeSelectors: true
+  pairs:
+    env: dev
